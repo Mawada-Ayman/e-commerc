@@ -1,0 +1,85 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root
+{
+    --main-color:#0aad0a;
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --font-family:'Encode Sans Expanded', sans-serif;
+    --rating-color:#ffc908;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body{
+    padding-top: 60px;
+}
+
+.nav {
+    height: 40px;
+}
+
+.row {
+@apply flex flex-wrap items-center py-8 px-4
+}
+
+.brand{
+    transition: all .7s;
+    border: #dddddd solid 2px;
+}
+
+.brand:hover
+{
+    box-shadow: rgba(10, 173, 10, 0.545) 0px 0px 10px 1px;
+}
+
+.categoris{
+    transition: all .7s;
+}
+
+.categoris:hover
+{
+    box-shadow: rgba(10, 173, 10, 0.545) 0px 0px 10px 1px;
+}
+
+.product{
+    transition: all .7s;
+}
+
+.product:hover
+{
+    box-shadow: rgba(10, 173, 10, 0.545) 0px 0px 10px 1px;
+    border: solid 1px var(main-color);
+}
+.product .btn 
+{
+    transition: transform .4s , opacity 1s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.product:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+
+
+.slick-dots li button:before {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    width: 20px; 
+    height: 6px; 
+    background-color: rgb(115, 115, 115); 
+}
+
+.slick-slide {
+    width: 100%;
+}
