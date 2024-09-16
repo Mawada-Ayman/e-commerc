@@ -136,11 +136,11 @@ let validationSchema = Yup.object().shape({
       {formik.errors.rePassword}
       </div>:null}
       {/* alert repassword*/}
-      <div className="flex items-center">
+      <div className="block sm:flex justify-between items-center">
         <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           {isLoding ? <i className="fa fa-spinner fa-spin px-2"></i> :'supmit'}</button>
 
-          <p className="pl-5">you have account ? <span className="fw-bold "> <Link to={'/login'}>login Now</Link></span></p>
+          <p className="py-3 sm:py-0">you have account ? <span className="fw-bold "> <Link to={'/login'}>login Now</Link></span></p>
           </div>
       </form>
     </>

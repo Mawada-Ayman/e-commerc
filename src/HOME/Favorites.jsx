@@ -35,11 +35,8 @@ import addToCartApi from '../APIS/cartApi';
 
 export default function Favorites  ({ products }) {
 
-  var { mutate: addMutate ,mutate: delmutate , status } = useMutationCart(addToCartApi);
- if (status == 'success') {
-  console.log('delet');
-  
- }
+  var { mutate: addMutate ,mutate: delmutate  } = useMutationCart(addToCartApi);
+
 
   return (
     <div className="container mx-auto p-4">
